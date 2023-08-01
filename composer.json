@@ -1,0 +1,14 @@
+{
+    "name": "mythicalsystems/mythicalpics-daemon",
+    "description": "This is the daemon for MythicalPics",
+    "type": "project",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "NaysKutzu",
+            "email": "polargaiming@yahoo.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {}
+}
