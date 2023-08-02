@@ -10,5 +10,8 @@
         }
     ],
     "minimum-stability": "alpha",
-    "require": {}
+    "require": {
+        "symfony/yaml": "^6.3",
+        "phpseclib/phpseclib": "^3.0"
+    }
 }

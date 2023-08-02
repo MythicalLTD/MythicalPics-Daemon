@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteBase /  
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+Options All -Indexes
+
+ErrorDocument 403 /errors/403.php
+ErrorDocument 404 /errors/404.php
+ErrorDocument 500 /errors/500.php
+ 
