@@ -1,18 +1,13 @@
 <?php 
-include(__DIR__.'/../base.php'); 
-require(__DIR__.'/../config.php');
+include(__DIR__.'/../../base.php'); 
+require_once(__DIR__.'/../../config.php');
+
 if (isset($_GET['auth_key'])) {
     if (!$_GET['auth_key'] == "") {
         $key = $_GET['auth_key'];
         $node_key = $_CONFIG['node_key'];
         if ($key == $node_key) {
-            $rsp = array(
-                "code" => 200,
-                "error" => null,
-                "message" => "The key is valid."
-            );
-            http_response_code(200);
-            die(json_encode($rsp, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+            # Continue
         } else {
             $rsp = array(
                 "code" => 403,
