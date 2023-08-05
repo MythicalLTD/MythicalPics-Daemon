@@ -63,8 +63,8 @@ try {
             "debug" => $_CONFIG['debug'],
         )
     );
-    die(json_encode($rsp, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
     $ssh->disconnect();
+    die(json_encode($rsp, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
 } catch (Exception $ex) {
     http_response_code(500);
     $rsp = array(
