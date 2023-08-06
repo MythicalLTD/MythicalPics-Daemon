@@ -32,7 +32,7 @@ $_CONFIG['mysql_host'] = '127.0.0.1';
 $_CONFIG['mysql_port'] = '3306';
 $_CONFIG['mysql_username'] = 'MythicalPics-Node';
 $_CONFIG['mysql_password'] = '<strongpassword>';
-$_CONFIG['mysql_database'] = 'mythicalpics_cache';
+$_CONFIG['mysql_database'] = 'MythicalPics-Daemon';
 
 #DANGER ZONE
 $_CONFIG['version'] = '1.0.3'; # Do not edit this if you don't know what this does
